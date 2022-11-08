@@ -22,3 +22,8 @@ window/size/viewport_height=800
 window/size/mode=2
 window/stretch/mode="viewport"
 window/stretch/aspect="expand"
+
+[rendering]
+
+renderer/rendering_method="mobile"
+renderer/rendering_method.web="mobile"
