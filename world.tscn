@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://7jbqs3ajg8wx"]
+[gd_scene load_steps=4 format=3 uid="uid://7jbqs3ajg8wx"]
 
 [ext_resource type="PackedScene" uid="uid://cltiqye44gm52" path="res://tile_map.tscn" id="1_e4kol"]
 [ext_resource type="PackedScene" uid="uid://c3mbep61i5fd2" path="res://character_body_2d.tscn" id="2_uk3lj"]
+[ext_resource type="Script" path="res://Panel.gd" id="3_ltn8t"]
 
 [node name="World" type="Node2D"]
 
@@ -11,3 +12,22 @@ layer_0/tile_data = PackedInt32Array(65535, 851968, 0, 0, 851968, 0, 1, 851968, 
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("2_uk3lj")]
 position = Vector2(-5, -75)
+
+[node name="Panel" type="Panel" parent="."]
+offset_left = -495.0
+offset_top = -394.0
+offset_right = -125.0
+offset_bottom = -277.0
+script = ExtResource("3_ltn8t")
+
+[node name="Velocity" type="RichTextLabel" parent="Panel"]
+layout_mode = 0
+offset_right = 372.0
+offset_bottom = 40.0
+
+[node name="Gravity" type="RichTextLabel" parent="Panel"]
+layout_mode = 1
+offset_left = -2.0
+offset_top = 45.0
+offset_right = 370.0
+offset_bottom = 85.0
